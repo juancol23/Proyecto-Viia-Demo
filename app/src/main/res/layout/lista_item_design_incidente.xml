@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/incidenteListClick"
+    android:padding="20dp"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <ImageView
+        android:id="@+id/imagenPostIncidente2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/LinearList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0001"
+            android:textSize="14sp"
+            android:id="@+id/numeroContador"/>
+        <TextView
+            android:id="@+id/textoStatusIncidente2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoUsuarioIncidente"
+            android:layout_below="@+id/textoUsuarioIncidente"
+            android:text="Estado"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textoUsuarioIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoFechaIncidente"
+            android:layout_below="@+id/textoFechaIncidente"
+
+            android:background="@drawable/desing_user"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:text="Usuario"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textoAddressIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoLocationIncidente"
+            android:layout_below="@+id/textoLocationIncidente"
+
+            android:text="Usuario"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textoLocationIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoAddressIncidente"
+            android:layout_below="@+id/textoAddressIncidente"
+
+            android:text="Usuario"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textoCreadoPorIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoStatusIncidente"
+            android:layout_below="@+id/textoStatusIncidente"
+
+            android:text="Usuario"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textoObservacionIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoCreadoPorIncidente"
+            android:layout_below="@+id/textoCreadoPorIncidente"
+            android:text="Usuario"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:id="@+id/LinearTask2"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/textoFechaIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textoPuntoIncidente"
+            android:layout_below="@+id/textoPuntoIncidente"
+            android:layout_toRightOf="@+id/textoPuntoIncidente"
+            android:text="Fecha"
+            android:textSize="14sp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/textoPuntoIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imagenPostIncidente"
+            android:text="Punto"
+            android:textSize="14sp"
+
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearTask3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/T_estadoImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/unlocked" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

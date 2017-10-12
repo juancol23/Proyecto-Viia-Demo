@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/listaItemIncidencia"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:id="@+id/linearItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="25dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+
+            android:id="@+id/numIncidente"
+            android:text="0001"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp"
+            android:id="@+id/fechaIncidente"
+            android:text="24/9/2017 10:47:45 pm"
+            />
+
+        <TextView
+            android:id="@+id/statuIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:text="statu"
+
+         />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:paddingRight="25dp"
+        android:orientation="horizontal"
+
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/userIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_weight="0.8"
+            android:text="Kelson"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/puntoIncidente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_alignBaseline="@+id/userIncidente"
+            android:layout_alignBottom="@+id/userIncidente"
+            android:layout_toEndOf="@+id/userIncidente"
+            android:layout_toRightOf="@+id/userIncidente"
+            android:text="SRQ 05 A" />
+
+    </LinearLayout>
+
+</LinearLayout>

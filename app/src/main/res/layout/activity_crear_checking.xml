@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+android:id="@+id/cordinator_crear_checking"
+tools:context="valcolra.viiascreen.com.proyecto_viiascreen.CrearChecking">
+
+
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsingToolbarCollapsinchecking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:contentScrim="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/imagePhotoChecking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/fondo_viia"
+            app:layout_collapseMode="parallax"
+            android:fitsSystemWindows="true"
+            />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin"
+            />
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+</android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/nestedScrollViewChecking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Detalles:"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/create_name_spot_checking"
+                android:layout_width="fill_parent"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:hint="Punto:" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/create_name_area_checking"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_marginBottom="10dp"
+                android:hint="Area:" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/create_name_observacion_checking"
+                android:hint="Observación"
+                android:layout_width="match_parent"
+                android:text=""
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/boton_create_checking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/create_checking"
+            android:theme="@style/RaisedButtonDark"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fabTakePhotoChecking"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_margin="@dimen/fab_margin"
+    android:src="@drawable/ic_camera"
+    app:backgroundTint="@android:color/background_light"
+    app:layout_anchor="@+id/appBar"
+    app:layout_anchorGravity="bottom|center_horizontal" />
+
+</android.support.design.widget.CoordinatorLayout>
+

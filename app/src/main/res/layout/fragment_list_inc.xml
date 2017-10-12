@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="valcolra.viiascreen.com.proyecto_viiascreen.view.fragments.Listar.ListInc">
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefreshInc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/listViewInc"
+        tools:showIn="@layout/app_bar_navegation">
+    </ListView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fabCrearInc"
+    android:layout_width="wrap_content"
+    app:backgroundTint="@color/colorPrimaryDark"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    app:srcCompat="@drawable/addincidente" />
+
+
+</FrameLayout>

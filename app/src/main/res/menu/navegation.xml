@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/viia_vehiculo"
+        android:orderInCategory="100"
+        android:title="Viia Vehiculo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/viia_sense"
+        android:orderInCategory="100"
+        android:title="Viia Sense"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/viia_crowd"
+        android:orderInCategory="100"
+        android:title="Viia Crowd"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/viia_screen"
+        android:orderInCategory="100"
+        android:title="Viia Screen"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/viia_live"
+        android:orderInCategory="100"
+        android:title="Viia Live"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/player"
+        android:orderInCategory="100"
+        android:title="Viia Player"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/viia_checking"
+        android:orderInCategory="100"
+        android:title="Viia Checking"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/viia_task"
+        android:orderInCategory="100"
+        android:title="Viia Task"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/viia_kpi"
+        android:orderInCategory="100"
+        android:title="Viia KPI"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/T_TaskListClick"
+    android:paddingRight="20dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:textSize="12sp"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <LinearLayout
+            android:id="@+id/T_LinearListTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00012"
+                android:textSize="14sp"
+                android:id="@+id/T_numeroContador"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/desing_user"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:id="@+id/T_design_task_usuario"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textSize="14sp"
+                android:id="@+id/T_design_task_createAt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textSize="14sp"
+                android:visibility="gone"
+
+                android:id="@+id/T_design_task_createdTask"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="punto"
+                android:textSize="14sp"
+                android:id="@+id/T_design_task_punto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="punto"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:id="@+id/T_design_task_estado"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/T_estadoTaskImagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/unlocked" />
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
